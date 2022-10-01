@@ -1,0 +1,11 @@
+[Added Associations]
+application/pdf=org.pwmt.zathura.desktop;
+image/png=qiv.desktop;gimp.desktop;sxiv.desktop;org.gnome.Nautilus.desktop;xdvi.desktop;org.pwmt.zathura.desktop;
+text/html=min.desktop;firefox.desktop;vim.desktop;
+video/x-matroska=mpv.desktop;
+image/jpeg=qiv.desktop;
+text/markdown=ghostwriter.desktop;koodo-reader.desktop;firefox.desktop;min.desktop;
+application/epub+zip=org.pwmt.zathura.desktop;org.pwmt.zathura-pdf-poppler.desktop;
+
+[Default Applications]
+image/png=sxiv.desktop
