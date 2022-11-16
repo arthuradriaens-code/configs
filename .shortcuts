@@ -1,0 +1,5 @@
+alias music=ncmpcpp
+alias qeconvert=/home/arthur/Scripts/QuantEspr/QE_file_prep.sh
+alias supercomputer=/home/arthur/Scripts/SuperCompLogin.sh
+alias server="ssh root@arthuradriaens.com"
+
