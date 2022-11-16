@@ -1,0 +1,21 @@
+cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
+cmd extract ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "extract?[y/N]"
+	read ans
+	[ $ans = "y" ] && aunpack $fx
+}}
+cmd delete ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && rm -rf -- $fx
+}}
+
+map D delete
+map E extract
+map <c-n> push :mkdir<space>
