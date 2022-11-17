@@ -1,3 +1,7 @@
+set shell sh
+set shellopts '-eu'
+set ifs "\n"
+
 cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
 cmd extract ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
@@ -13,9 +17,21 @@ cmd delete ${{
 	printf "%s\n\t" "$fx"
 	printf "delete?[y/N]"
 	read ans
-	[ $ans = "y" ] && rm -rf -- $fx
+	[ $ans = "y" ] && rm -rf $fx
+}}
+cmd open ${{
+    case $(file --mime-type -Lb $f) in
+	application/vnd.openxmlformats-officedocument.spreadsheetml.sheet) sc-im $fx ;;
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
 }}
 
 map D delete
 map E extract
 map <c-n> push :mkdir<space>
+map o &xdg-open "$f"
+map O $xdg-open --ask "$f"
+map x $$f
+map X !$f
+
