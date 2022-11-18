@@ -34,4 +34,4 @@ map o &xdg-open "$f"
 map O $xdg-open --ask "$f"
 map x $$f
 map X !$f
-
+source ~/.shortcutslf
