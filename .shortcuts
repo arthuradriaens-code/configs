@@ -3,3 +3,9 @@ alias qeconvert=/home/arthur/Scripts/QuantEspr/QE_file_prep.sh
 alias supercomputer=/home/arthur/Scripts/SuperCompLogin.sh
 alias server="ssh root@arthuradriaens.com"
 alias fes="cd ~/Universiteit/CompMat/Fe-Si"
+alias groffpile=~/Scripts/conversion/groffpile.sh
+alias findvol=~/Scripts/QuantEspr/FindVolMultiCore.sh
+alias extractsong=""yt-dlp -x -f bestaudio/best""
+
+
+
