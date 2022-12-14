@@ -54,6 +54,8 @@ cmd open ${{
 
 cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
 
+cmd printtoprinter $lpr $fx
+
 cmd extract ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
@@ -108,6 +110,7 @@ map M moveto
 map <c-n> push :mkdir<space>
 map <c-r> reload
 map <c-s> set hidden!
+map <c-p> printtoprinter
 map <enter> shell
 map x $$f
 map X !$f
