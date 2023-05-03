@@ -62,7 +62,7 @@ cmd extract ${{
 	printf "%s\n\t" "$fx"
 	printf "extract?[y/N]"
 	read ans
-	[ $ans = "y" ] && aunpack $fx
+	[ $ans = "y" ] && aunpack.sh $fx
 }}
 
 cmd delete ${{
@@ -134,4 +134,4 @@ map W $setsid -f $TERMINAL >/dev/null 2>&1
 map Y $printf "%s" "$fx" | xclip -selection clipboard
 
 # Source Bookmarks
-source "~/.shortcutslf"
+source "~/.config/.shortcutslf"

@@ -4,3 +4,5 @@ image/jpeg=sxiv.desktop
 image/png=sxiv.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
 text/plain=vim.desktop
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=sc-im.desktop
+application/octet-stream=mpv.desktop

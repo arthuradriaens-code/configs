@@ -15,7 +15,9 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 super + u
-	qutebrowser
+	chromium
+super + d
+	firefox
 super + n
 	lf.sh
 super + a
@@ -25,9 +27,11 @@ super + i
 super + o
 	weather.sh
 super + e
-	emoji.sh
+	emoji.sh plak
 super + b
 	bookmarks.sh
+super + p
+	stocks.sh
 #
 # bspwm hotkeys
 #
@@ -154,5 +158,6 @@ XF86AudioRaiseVolume
 XF86Calculator
   calc.sh 
 XF86HomePage
-  qutebrowser
-
+  chromium
+XF86Battery
+  Battery.sh
