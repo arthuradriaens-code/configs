@@ -1,3 +1,5 @@
 map gfes $lf -remote "send $id select \~/Universiteit/CompMat/Fe-Si"
 map gpp $lf -remote "send $id select \~/Universiteit/PlasmaPhys"
 map gwal $lf -remote "send $id select \~/wallpapers"
+map gmt $lf -remote "send $id select \~/Universiteit/master-proef/master-thesis"
+
